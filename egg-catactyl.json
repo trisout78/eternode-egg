@@ -1,0 +1,282 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2022-06-27T17:31:04+02:00",
+    "name": "catactyl",
+    "author": "trisout78@gmail.com",
+    "description": "Multi-egg",
+    "features": null,
+    "docker_images": {
+        "quay.io\/devil38\/catactyl:amd64": "quay.io\/devil38\/catactyl:amd64"
+    },
+    "file_denylist": [],
+    "startup": ".\/minecraft.sh",
+    "config": {
+        "files": "{}",
+        "startup": "{}",
+        "logs": "{}",
+        "stop": "stop"
+    },
+    "scripts": {
+        "installation": {
+            "script": null,
+            "container": "alpine:3.4",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "NODEJS",
+            "description": "NodeJS version",
+            "env_variable": "NODEJS",
+            "default_value": "14",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "JAVA VERSION",
+            "description": "",
+            "env_variable": "JAVA_VERSION",
+            "default_value": "openjdk@1.17.0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "PYTHON VERSION",
+            "description": "",
+            "env_variable": "PYTHON_VERSION",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "MINDUSTRY MAP",
+            "description": "",
+            "env_variable": "MINDUSTRY_MAP",
+            "default_value": "Ancient",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "SINUSBOT ADMIN ACCOUNT",
+            "description": "",
+            "env_variable": "SINUSBOT_ADMIN_ACCOUNT",
+            "default_value": "changeme",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "RAGE.MP SERVER NAME",
+            "description": "",
+            "env_variable": "RAGEMP_SERVER_NAME",
+            "default_value": "A Eternode Server",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "RAGE.MP MAX PLAYERS",
+            "description": "",
+            "env_variable": "RAGEMP_MAX_PLAYERS",
+            "default_value": "50",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "REDIS ADMIN ACCOUNT PASSWORD",
+            "description": "",
+            "env_variable": "REDIS_ADMIN_ACCOUNT_PASSWORD",
+            "default_value": "changeme",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TEAMSPEAK3 FILE TRANSFER PORT",
+            "description": "",
+            "env_variable": "TEAMSPEAK3_FILE_TRANSFER_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "JAVA ARGUMENTS",
+            "description": "",
+            "env_variable": "JAVA_ARGUMENTS",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TYPESCRIPT COMPILE FOLDER",
+            "description": "",
+            "env_variable": "TYPESCRIPT_COMPILE_FOLDER",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "DISCORD BOT MAIN FILE",
+            "description": "",
+            "env_variable": "DISCORD_BOT_MAIN_FILE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "DISCORD BOT PACKAGE",
+            "description": "",
+            "env_variable": "DISCORD_BOT_PACKAGE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "MTA:SA HTTP PORT",
+            "description": "",
+            "env_variable": "MTASA_HTTP_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "MTA:SA ASE PORT",
+            "description": "",
+            "env_variable": "MTASA_ASE_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TERRARIA PLAYER LIMIT",
+            "description": "",
+            "env_variable": "TERRARIA_PLAYER_LIMIT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TERRARIA DIFFICULTY",
+            "description": "",
+            "env_variable": "TERRARIA_DIFFICULTY",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TERRARIA MOTD",
+            "description": "",
+            "env_variable": "TERRARIA_MOTD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TERRARIA SERVER LANGUAGE",
+            "description": "",
+            "env_variable": "TERRARIA_SERVER_LANGUAGE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TERRARIA WORLD NAME",
+            "description": "",
+            "env_variable": "TERRARIA_WORLD_NAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TERRARIA WORLD SIZE",
+            "description": "",
+            "env_variable": "TERRARIA_WORLD_SIZE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "MINDUSTRY SERVER NAME",
+            "description": "",
+            "env_variable": "MINDUSTRY_SERVER_NAME",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "MINIOS3 STARTUP TYPE",
+            "description": "",
+            "env_variable": "MINIOS3_STARTUP_TYPE",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TEASPEAK QUERY PORT",
+            "description": "",
+            "env_variable": "TEASPEAK_QUERY_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "TEASPEAK FILE TRANSFER PORT",
+            "description": "",
+            "env_variable": "TEASPEAK_FILE_TRANSFER_PORT",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        }
+    ]
+}
